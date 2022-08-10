@@ -1,0 +1,15 @@
+modules:
+  jira:globalPage:
+    - key: jcstat-hello-world
+      function: main
+      title: JCStat
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/5a4388ef-3b22-40b6-b93c-36a6bff68e63
+permissions:
+  scopes:
+    - manage:jira-project
+    - manage:jira-configuration
+    - read:jira-work
